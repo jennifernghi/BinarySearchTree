@@ -1,0 +1,5 @@
+@Override/** Returns the number of nonleaf nodes */
+  public int getNumberofNonLeaves()
+  {
+	  return size-getNumberOfLeaves();
+  }
