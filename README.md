@@ -20,6 +20,7 @@
          
 
     ALGORITHM:
+    
         boolean delete(E e){
         
             Locate element e in the tree
