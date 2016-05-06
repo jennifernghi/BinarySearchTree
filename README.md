@@ -55,7 +55,7 @@
      + start from root and scan down from it until a match found or you arrive at 1 empty subtree
      + ALGORITHM
      
-      search(E e)
+      boolean search(E e)
       
       {
 
@@ -84,7 +84,7 @@
               
             }
         
-        return false;
+             return false;
         
      }
      
