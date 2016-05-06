@@ -57,30 +57,36 @@
      
       search(E e){
 
-        current = root;
+            current = root;
         
-        while(current!=null)
-        {      
-            if(e < current.element)
+            while(current!=null)
+        
+            {      
+                  if(e < current.element)
             
-            {
-                  current = current.left;
+                  {
                   
-            }
+                        current = current.left;
+                  
+                  }
             
-            else if(e > current.element)
+                  else if(e > current.element)
             
-            {
-                  current = current.right;
+                  {
                   
-            }else//match found
+                        current = current.right;
                   
-                  return true;
+                  }else//match found
+                  
+                        return true;
               
-        }
+            }
         
         return false;
+        
      }
+     
+     
 Time complexity:
 inorder, preorder, postorder: O(n)
 search, insertion, deletion: height of three: worst O(n) 
