@@ -25,7 +25,7 @@
         
             Locate element e in the tree
             
-            if(e !found) return true;
+            if(e !found) return false;
             
             Let current be the node that contains e and parent be the parent of current;
             
@@ -50,3 +50,9 @@
             return true; //element deleted
         
         }
+
+
+Time complexity:
+inorder, preorder, postorder: O(n)
+search, insertion, deletion: height of three: worst O(n) 
+                                              well-balanced O(logn)
