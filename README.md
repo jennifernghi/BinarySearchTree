@@ -39,9 +39,9 @@
                 
             }else{//case 2
             
-                Locate the rightmost ode in the left subtree of current.
+                Locate the rightmost node in the left subtree of current.
                 
-                copy he element value in the rightmost node to current.
+                copy the element value of the rightmost node to current.
                 
                 connect the parent of the rightmost node to the left child of rightmost node;
             }
@@ -51,7 +51,36 @@
         
         }
 
+2. search
+     + start from root and scan down from it until a match found or you arrive at 1 empty subtree
+     + ALGORITHM
+     
+      search(E e){
 
+        current = root;
+        
+        while(current!=null)
+        {      
+            if(e < current.element)
+            
+            {
+                  current = current.left;
+                  
+            }
+            
+            else if(e > current.element)
+            
+            {
+                  current = current.right;
+                  
+            }else//match found
+                  
+                  return true;
+              
+        }
+        
+        return false;
+     }
 Time complexity:
 inorder, preorder, postorder: O(n)
 search, insertion, deletion: height of three: worst O(n) 
