@@ -1,3 +1,6 @@
+/**
+  code and algorithm from "Introduction to Java Programming Comprehensive version 10th Edition" by Y. Daniel Liang chapter 25
+*/
 public boolean delete(E e) {
     // Locate the node to be deleted and also locate its parent node
     TreeNode<E> parent = null;
